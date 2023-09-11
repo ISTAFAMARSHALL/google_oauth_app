@@ -1,0 +1,2 @@
+class AuthCallbacksController < ApplicationController
+end
