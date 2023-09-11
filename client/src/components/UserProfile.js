@@ -42,14 +42,14 @@
 // src/components/UserProfile.js
 
 import React, { useEffect, useState } from 'react';
-import { API_BASE_URL } from '../api';
+// import { API_BASE_URL } from '../api';
 
 function UserProfile() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
     // Fetch user information from your Rails API
-    fetch(`${API_BASE_URL}/auth/validate_token`, {
+    fetch(`${""}/auth/validate_token`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

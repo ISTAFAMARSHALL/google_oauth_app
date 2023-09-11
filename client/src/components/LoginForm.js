@@ -1,12 +1,12 @@
 // src/components/LoginForm.js
 import React from 'react';
 import { GoogleLogin } from 'react-google-login';
-import { API_BASE_URL } from '../api';
+// import { API_BASE_URL } from '../api';
 
 function LoginForm() {
   const responseGoogle = (response) => {
     // Send the Google OAuth2 response to your Rails API for authentication
-    fetch(`${API_BASE_URL}/auth/google_oauth2/callback`, {
+    fetch(`${""}/auth/google_oauth2/callback`, {
       method: 'POST',
       body: JSON.stringify({ access_token: response.accessToken }),
       headers: {

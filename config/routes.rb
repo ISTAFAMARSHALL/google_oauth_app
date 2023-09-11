@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   }
 
   # config/routes.rb
-  devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
+  # devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
+  
 
   get '*path', to: 'application#index', constraints: ->(request) do
   !request.xhr? && request.format.html?
